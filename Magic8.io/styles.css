@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 1000px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1 {
+  
+    font-family: 'Bungee Spice', cursive;
+    font-size: 5em;
+}
+
+#ballBackground, #ballForeground {
+    background-color: #00203FFF;
+    width: 30%;
+    height: 50%;
+    border: 3px solid #222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ballBackground:hover {
+    /* box-shadow: offset-x, offset-y, blur-radius, spread-radius, color */
+    box-shadow: 0px 2px 20px 5px #222;
+    transition-duration: 0.25s;
+    transform: translateY(-10px);
+}
+
+#ballForeground {
+    background-color:floralwhite;
+    width: 50%;
+}
+
+p {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 4em;
+    /* font-family: 'Press Start 2P', cursive; */
+}
+
+
+#endParagraph {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 2em;
+}
+
+/* Media Queries Magic! */
+
+/* Only considering portrait mode BTW */
+
+/* For tablets and laptops */
+@media (max-width: 1669px) {
+
+}
+
+@media (max-width: 1035px) {
+    #endParagraph {
+        font-size: 1.25em;
+    }
+
+    /* #ballBackground {
+        width: 63%;
+        height: 55%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    } */
+}
+
+@media (max-width: 915px) {
+    #ballBackground {
+        width: 63%;
+        height: 55%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 810px) {
+    #endParagraph {
+        font-size: 0.9em;
+    }
+    #ballBackground {
+        width: 63%;
+        height: 55%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+}
+@media (max-width: 750px) {
+    #ballBackground {
+        width: 63%;
+        height: 45%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 660px) {
+    #ballBackground {
+        width: 63%;
+        height: 40%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 610px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    #ballBackground {
+        width: 70%;
+        height: 40%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 553px) {
+    
+    #ballBackground {
+        width: 70%;
+        height: 50%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 470px) {
+    #endParagraph {
+        font-size: 0.8em;
+    }
+    #ballBackground {
+        width: 70%;
+        height: 40%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+}
+
+
+/* For modern day cell phones */
+@media (max-width: 417px) {
+    #endParagraph {
+        font-size: 0.6em;
+    }
+
+    #ballBackground {
+        width: 70%;
+        height: 30%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 363px) {
+    h1 {
+        font-size: 1.9em;
+    }
+
+    #ballBackground {
+        width: 60%;
+        height: 20%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+/* 
+    #endParagraph {
+        font-size: 0.6em;
+    } */
+}
+
+/* For older and smaller devices */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #endParagraph {
+        font-size: 0.4em;
+    }
+
+    #ballBackground {
+        width: 60%;
+        height: 20%;
+        border: 3px solid #222;
+        border-radius: 50%;
+    }
+
+    #ballForeground {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+
+}
+
+
